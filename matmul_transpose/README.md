@@ -14,7 +14,7 @@ class B(nn.Module):
 
 Module `A` and `B` would produce the same results.
 ### Benchmark
-Let's say `x` is of shape (n, k) and `y` is of shape (k, m), we select the value from [32, 128, 512, 1024] for each of them which gives us a total of 64 combinations. We use TensorRT profiler to get the time spend on the layers. Note that the benchmark results are gathered in fp16 precision on RTX 2070 super GPU.
+Let's say `x` is of shape (B, n, k) and `y` is of shape (B, k, m) where `B` is the batch size and is fixed to 128. We select the value from [32, 128, 512, 1024] for each of them which gives us a total of 64 combinations. TensorRT profiler is used to get the time spend on the layers. Note that the benchmark results are gathered in fp16 precision on RTX 2070 super GPU.
 
 **Original Module (A) vs Transformed Module (B)**
 ![compare](https://user-images.githubusercontent.com/20773414/134827597-002f12cd-ffa2-4c08-ac4c-02a3218511e3.png)
