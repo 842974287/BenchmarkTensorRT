@@ -22,4 +22,4 @@ Blue line is the time cost for original module and orange line is the time cost 
 
 **Time Breakdown for Original Module (matmul vs permute)**
 ![compare](https://user-images.githubusercontent.com/20773414/134827750-cecf7f3b-c226-41cb-82f9-ffca5393c3a0.png)
-Blue line is the time spend on matmul layer while orange line is the line spend on transpoes layer.
+Blue line is the time spend on the matmul op while orange line is the time spend on the transpose op.
