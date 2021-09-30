@@ -1,0 +1,8 @@
+matmul_1_other: 0.002048ms
+matmul_1: 0.011808ms
+slice_tensor: 0.012768ms
+slice_tensor_1: 0.008064ms
+matmul_2_other: 0.00192ms
+matmul_2: 0.012288ms
+matmul_3_other: 0.00192ms
+matmul_3: 0.006176ms
